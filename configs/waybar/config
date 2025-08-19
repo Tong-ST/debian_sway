@@ -1,0 +1,59 @@
+{
+  "layer": "top", // bar position (top or bottom)
+  "position": "top",
+  "modules-left": ["custom/menu", "custom/shutdown" ,"custom/logout", "sway/workspaces"], 
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "bluetooth" ,"cpu", "memory", "battery", "network"],
+
+  "clock": {
+    "format": "{:%a %d %b %H:%M}",
+    "on-click": "gnome-calendar"
+  },
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "memory": {
+    "format": " {used:0.1f}G/{total:0.1f}G",
+    "on-click": "gnome-system-monitor"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "on-click": "flatpak run com.github.d4nj1.tlpui"
+  },
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ifname}: {ipaddr}",
+    "format-disconnected": "⚠ Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-icons": {
+    "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{status}\n{device_alias}",
+    "on-click": "blueman-manager"
+  },
+  "custom/logout": {
+    "format": "",
+    "tooltip": "Logout",
+    "on-click": "swaymsg exit"
+  },
+  "custom/shutdown": {
+    "format": "",
+    "tooltip": "Shutdown",
+    "on-click": "shutdown now"
+  },
+  "custom/menu": {
+    "format": "",
+    "tooltip": "menu",
+    "on-click": "fuzzel"
+  },
+}
+
