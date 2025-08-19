@@ -96,7 +96,7 @@ But if you not done yet, Let's do some customized!
     Install git & clone this repo if not already
     ```
     sudo apt install git
-    git clone https://github.com/Tong-ST/thinkpad-debian_sway.git
+    git clone https://github.com/Tong-ST/debian_sway.git
     ```
     Copy .config file to your device or Manually copy files in configs folder to ~/.config/
     ```
