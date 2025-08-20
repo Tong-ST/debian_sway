@@ -34,16 +34,19 @@ Than we can move on install / fix some stuff
 If done setup the basic then move to next step
 - In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealling with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
     - Install Liquorix on Debian
-        1. install " curl " if not already ``` sudo apt install curl -y ```
+        1. install " curl " if not already and add repo
+            ```
+            sudo apt install curl -y
+            curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
+            ```
         2. install " Liquorix "
 
-            ```
-            curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
+            ``` 
             sudo apt update
             sudo apt install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
             ```
 
-        3. Restart ``` reboot ``` and make sure secure boot (BIOS) is now disable in orders start using liquorix
+        3. Restart ``` reboot ``` and make sure ***SECURE BOOT*** (BIOS) is now ***DISABLE*** in orders to start using ***liquorix***
         4. To verify ``` uname -r ``` to check kernel version if it say 6.x.xx-x-liquorix-amd64(or some like that) Now you on.
 
 Optional step if debian doesn't fully support language out of the box like me (Thai language) You've to install for yourself 
@@ -75,7 +78,7 @@ But if you not done yet, Let's do some customized!
     sudo apt install sway swaybg swaylock swayidle \
     waybar grim slurp wl-clipboard fuzzel kitty mako-notifier \
     brightnessctl pulseaudio-utils pavucontrol blueman \
-    network-manager network-manager-gnome gnome-calendar gnome-system-monitor thunar btop
+    network-manager network-manager-gnome gnome-calendar gnome-system-monitor thunar btop fonts-font-awesome
     ```
     Also install " tlp " for Thinkpad/laptop power management
     ```
@@ -94,6 +97,8 @@ But if you not done yet, Let's do some customized!
     flatpak install flathub app.zen_browser.zen
     flatpak install flathub com.github.d4nj1.tlpui
     ```
+    NOTE: You don't have to install zen or tlpui but you have to change **default browser in .config** file to your liking
+    and Have to change **"on-click": "NEW APP"** for battery in **waybar config** file
 2. ***AFTER* Install all requirement now let's make it happen**
 
     Install git & clone this repo if not already
@@ -105,6 +110,14 @@ But if you not done yet, Let's do some customized!
     ```
     cp -r debian_sway/configs/sway ~/.config/sway
     cp -r debian_sway/configs/waybar ~/.config/waybar
+    ```
+    Install JetBrains Mono Nerd Font for Fonts and Icons used
+    ```
+    wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+    cd ~/.local/share/fonts
+    unzip JetBrainsMono.zip
+    rm JetBrainsMono.zip
+    fc-cache -fv
     ```
 3. ***JUMP IN* to sway**
     
