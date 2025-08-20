@@ -81,10 +81,11 @@ But if you not done yet, Let's do some customized!
     ``` 
     sudo apt install sway swaybg swaylock swayidle \
     waybar grim slurp wl-clipboard fuzzel kitty mako-notifier \
-    brightnessctl pulseaudio-utils pavucontrol blueman \
+    brightnessctl pulseaudio-utils pavucontrol blueman xdg-desktop-portal-wlr \
     network-manager network-manager-gnome gnome-calendar \
-    mesa-utils mesa-vulkan-drivers gnome-system-monitor thunar fonts-font-awesome
+    gnome-system-monitor thunar fonts-font-awesome
     ```
+
     Also install " tlp " for Thinkpad/laptop power management
     ```
     sudo apt install tlp tlp-rdw acpi-call-dkms
@@ -102,6 +103,10 @@ But if you not done yet, Let's do some customized!
     flatpak install flathub app.zen_browser.zen
     flatpak install flathub com.github.d4nj1.tlpui
     ```
+    For **Nvidia** users you might need to check **nouveau** work properly 
+    ```
+    sudo dmesg | grep nouveau
+    ```
     NOTE: You don't have to install zen or tlpui but you have to change **default browser in .config** file to your liking
     and Have to change **"on-click": "NEW APP"** for battery in **waybar config** file
 2. ***AFTER* Install all requirement now let's make it happen**
@@ -113,8 +118,7 @@ But if you not done yet, Let's do some customized!
     ```
     Copy .config file to your device or Manually copy files in configs folder to ~/.config/
     ```
-    cp -r debian_sway/configs/sway ~/.config/sway
-    cp -r debian_sway/configs/waybar ~/.config/waybar
+    cp -r debian_sway/configs/ ~/.config/
     ```
     Install JetBrains Mono Nerd Font for Fonts and Icons used
     ```
@@ -141,5 +145,38 @@ But if you not done yet, Let's do some customized!
     - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
     - something you might want to do is switch between language currently using ``` CTRL+ALT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
     - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
+
+## GO ALL-IN? (Barebone debian + Sway No others DE)
+> This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering to work, But here just provide some package you need to get start with
+
+This section can do after install or alongside with Sway install section abrove mostly just package that might doesn't come with shipped DE
+
+If you very new, First thing might need install is just ``` apt install sudo -y ``` do within root that can access by ``` su - ``` which is already explain in debian installation abrove
+
+- CORE PACKAGE
+    ```
+    sudo apt install wayland-protocols xwayland curl htop libinput-tools \
+    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd
+    ```
+    If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
+
+- LOGIN MANAGER here you need to 
+    ```
+    sudo apt install lightdm
+    ```
+    - After install lightdm you might need to config default session ``` sudo nano /etc/lightdm/lightdm.conf ``` uncomment and change section [Seat:*] 
+    at line **user-session=sway** more config is up to you
+
+- UTILITES
+    ```
+    sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc timeshift
+    ```
+
+- FONTS
+    ```
+    sudo apt install fonts-dejavu fonts-noto fonts-noto-color-emoji fonts-font-awesome
+    ```
+
+More optional **tlp** config it's depend on your machine but if you want to use my **personal config** you can ``` sudo cp -r debian_sway/custom_conf/tlp.conf /etc/ ``` but i **extreamly recommend** to config for your own machine needed
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
