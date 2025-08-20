@@ -12,8 +12,12 @@ So, If you use Thinkpad T14 gen 2 like me that using *INTEL AX201 wifi card* (ma
 1. Make sure wifi connection <b>ALL Enable </b> in BIOS (even the one that said UEFI wifi connection) TO DO that
     1. in BIOS go to Security > Enable Secure boot (my Thinkpad model need enable secure boot for enable UEFI wifi connection)
     2. Once you enable UEFI wifi connection Then you can disable secure boot after, You actually need to disable secure boot to use custom kernel like Liquorix that i use in my debian
-    3. When boot back to system and still not work try
-    ``` sudo modprobe -r iwlwifi && sudo modprobe iwlwifi ```
+    3. When boot back to system and still not work try:
+        ```
+        sudo apt install firmware-linux firmware-iwlwifi 
+        sudo modprobe -r iwlwifi
+        sudo modprobe iwlwifi 
+        ```
 2. Upgrade Linux kernel to newer version might find the guide how to somewhere it's different per distro but In debian I just upgrade with [ Liquorix](https://liquorix.net/) (Detail at Debian setup) This help me fix a lot of hardware problem
 
 3. Alternative, if thing still break and you can't find the way to fix it try install older version that you machine ship with for example [Thinkpad linux support](https://support.lenovo.com/us/en/solutions/pd031426-linux-for-personal-systems) not sure this way is really necessary these day since patch and support usaully ship with newer Linux kernel
@@ -155,12 +159,13 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 
 - CORE PACKAGE
     ```
-    sudo apt install wayland-protocols xwayland curl pip pipx htop libinput-tools\
+    sudo apt install wayland-protocols xwayland curl python3-pip pipx htop libinput-tools\
     xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd
+    sudo usermod -aG seat $USER
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
-- LOGIN MANAGER or Just login with user and use ``` sway ``` 
+- LOGIN MANAGER or autologin see in sway wiki in references section  
     ```
     sudo apt install greetd wlgreet
     sudo systemctl enable greetd
