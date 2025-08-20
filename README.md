@@ -26,7 +26,11 @@ Than we can move on install / fix some stuff
 > For debian you might need to give sudo to your main user to do that
     
 1. Get access to root using ``` su - ```
-2. Run this command ``` usermod -aG sudo YOURUSERNAME ```
+2. Run this command 
+    ``` 
+    apt install sudo -y
+    usermod -aG sudo $USER 
+    ```
 3. Logout / Restart and test using ``` sudo apt update ```
 
 ***AGAIN, IF YOU DON'T HAVE ANY HARDWARE SUPPORT PROBLEM STICK WITH DEFAULT KERNEL THAT SHIP WITH DEBIAN AND YOU CAN SKIP THIS SECION BELOW***
