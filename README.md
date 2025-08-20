@@ -3,7 +3,7 @@
 > This guide made for Thinkpad T14 gen 2 (intel) if they're running to some problem using linux + who want to try on tilling window manager
 
 ## Thinkpad T14 gen 2 (intel) Setup
-**IF YOU DO NOT HAVE ANY HARDWARE SUPPORT PROBLEM YOU CAN *SKIP* THIS SECTION**
+***IF YOU DO NOT HAVE ANY HARDWARE SUPPORT PROBLEM YOU CAN *SKIP* THIS SECTION***
 > How to detect if your hardware not fully fuction?
 - One way to see is when you boot up into distro the green [OK]... is not all checked
 #
@@ -26,6 +26,8 @@ Than we can move on install / fix some stuff
 1. Get access to root using ``` su - ```
 2. Run this command ``` usermod -aG sudo YOURUSERNAME ```
 3. Logout / Restart and test using ``` sudo apt update ```
+
+***AGAIN, IF YOU DON'T HAVE ANY HARDWARE SUPPORT PROBLEM STICK WITH DEFAULT KERNEL THAT SHIP WITH DEBIAN AND YOU CAN SKIP THIS SECION BELOW***
 
 If done setup the basic then move to next step
 - In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealling with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
