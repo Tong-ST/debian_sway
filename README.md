@@ -78,7 +78,8 @@ But if you not done yet, Let's do some customized!
     sudo apt install sway swaybg swaylock swayidle \
     waybar grim slurp wl-clipboard fuzzel kitty mako-notifier \
     brightnessctl pulseaudio-utils pavucontrol blueman \
-    network-manager network-manager-gnome gnome-calendar gnome-system-monitor thunar fonts-font-awesome
+    network-manager network-manager-gnome gnome-calendar \
+    mesa-utils mesa-vulkan-drivers gnome-system-monitor thunar fonts-font-awesome
     ```
     Also install " tlp " for Thinkpad/laptop power management
     ```
