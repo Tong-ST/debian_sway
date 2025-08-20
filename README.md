@@ -112,13 +112,13 @@ But if you not done yet, Let's do some customized!
     - ``` WIN+SHIFT+C ``` = Reload sway config file to see chagnes (Error might show, better fix what's wrong before move on)
     - ``` WIN+D ``` = Search for app using fuzzel
     - ``` WIN+ENTER ``` = Open Kitty terminal
-    - ``` WIN+Z``` = Open your browser default with Zen
+    - ``` WIN+Z ``` = Open your browser default with Zen
 
     And in default sway install and this config here we use **swaylock / swayidle** it will lockscreen when inactive It just going to be blackscreen when LOCK and you can UNLOCK by typing your login PIN then ENTER (Backspace to clear before typing)
     
     **Now you ready to drive in to Sway**
     - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
-    - something you might want to is switch between language currently using ``` CTRL+ALT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
+    - something you might want to do is switch between language currently using ``` CTRL+ALT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
     - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
