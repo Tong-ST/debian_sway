@@ -62,9 +62,9 @@ For example of Thai language :
  ``` sudo dpkg-reconfigure locales ``` choose you locales and update it
 
 ## Sway Setup 
-> Noting Fancy here just simple setup that you can expand...
+> Nothing Fancy here just simple setup that you can expand...
 
-Now for the fun part, If you not plan to using *tilling window manager* you already done setup the basic ready to use Thinkpad with Debian 13 x liquorix kernel
+Now for the fun part, If you not plan to using *Tiling window manager* you already done setup the basic ready to use Thinkpad with Debian 13 x liquorix kernel
 
 But if you not done yet, Let's do some customized! 
 
@@ -80,8 +80,8 @@ But if you not done yet, Let's do some customized!
     Install basic need
     ``` 
     sudo apt install sway swaybg swaylock swayidle \
-    waybar grim slurp wl-clipboard fuzzel kitty mako-notifier \
-    brightnessctl pulseaudio-utils pavucontrol blueman xdg-desktop-portal-wlr \
+    waybar grim slurp wl-clipboard fuzzel alacritty mako-notifier \
+    brightnessctl pavucontrol blueman xdg-desktop-portal-wlr \
     network-manager network-manager-gnome gnome-calendar \
     gnome-system-monitor thunar fonts-font-awesome
     ```
@@ -136,7 +136,7 @@ But if you not done yet, Let's do some customized!
     - ``` WIN+SHIFT+W ``` = Close window/application
     - ``` WIN+SHIFT+C ``` = Reload sway config file to see chagnes (Error might show, better fix what's wrong before move on)
     - ``` WIN+D ``` = Search for app using fuzzel
-    - ``` WIN+ENTER ``` = Open Kitty terminal
+    - ``` WIN+ENTER ``` = Open alacritty terminal
     - ``` WIN+Z ``` = Open your browser default with Zen
 
     And in default sway install and this config here we use **swaylock / swayidle** it will lockscreen when inactive It just going to be blackscreen when LOCK and you can UNLOCK by typing your login PIN then ENTER (Backspace to clear before typing)
@@ -147,7 +147,7 @@ But if you not done yet, Let's do some customized!
     - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 
 ## GO ALL-IN? (Barebone debian + Sway No others DE)
-> This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering to work, But here just provide some package you need to get start with
+> This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering it to work, But here just provide some package you need to get start with
 
 This section can do after install or alongside with Sway install section abrove mostly just package that might doesn't come with shipped DE
 
@@ -155,28 +155,34 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 
 - CORE PACKAGE
     ```
-    sudo apt install wayland-protocols xwayland curl htop libinput-tools \
+    sudo apt install wayland-protocols xwayland curl pip pipx htop libinput-tools\
     xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
-- LOGIN MANAGER here you need to 
+- LOGIN MANAGER or Just login with user and use ``` sway ``` 
     ```
-    sudo apt install lightdm
+    sudo apt install greetd wlgreet
+    sudo systemctl enable greetd
     ```
-    - After install lightdm you might need to config default session ``` sudo nano /etc/lightdm/lightdm.conf ``` uncomment and change section [Seat:*] 
-    at line **user-session=sway** more config is up to you
-
+    - ADDITIONAL CONFIG ``` sudo nano /etc/greetd/config.toml ```
+    **uncomment line *below*** of if you using **wlgreet**
 - UTILITES
     ```
-    sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc timeshift
+    sudo apt install gvfs xdg-utils firefox-esr clipman gparted mpv swayimg timeshift 
     ```
-
 - FONTS
     ```
     sudo apt install fonts-dejavu fonts-noto fonts-noto-color-emoji fonts-font-awesome
     ```
 
-More optional **tlp** config it's depend on your machine but if you want to use my **personal config** you can ``` sudo cp -r debian_sway/custom_conf/tlp.conf /etc/ ``` but i **extreamly recommend** to config for your own machine needed
+More optional **tlp** config it's depend on your machine but if you want to use my **personal config** you can ``` sudo cp -r debian_sway/custom_conf/tlp.conf /etc/ ``` but i **extremely recommend** to config for your own machine needed
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
+
+## References
+Recommend to check Sway community doc below
+
+- [Sway wiki](https://github.com/swaywm/sway/wiki)
+- [Useful Add-on for Sway](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
+- [Debian - Sway wiki](https://wiki.debian.org/sway)

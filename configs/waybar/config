@@ -48,7 +48,7 @@
   "custom/shutdown": {
     "format": "",
     "tooltip": "Shutdown",
-    "on-click": "shutdown now"
+    "on-click": "systemctl poweroff"
   },
   "custom/menu": {
     "format": "",
