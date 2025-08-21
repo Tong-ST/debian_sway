@@ -160,7 +160,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 - CORE PACKAGE
     ```
     sudo apt install wayland-protocols xwayland curl python3-pip pipx htop libinput-tools\
-    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd
+    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd \
     sudo usermod -aG seat $USER
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
