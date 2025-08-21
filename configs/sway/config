@@ -22,13 +22,14 @@ set $term alacritty
 set $menu fuzzel
 
 # Your others shortcut for app
-set $file Thunar 
+set $file Thunar
 set $browser flatpak run app.zen_browser.zen
 
 include /etc/sway/config-vars.d/*
 
 # autoload when start wm
 exec waybar
+exec /usr/libexec/polkit-mate-authentication-agent-1
 # exec flatpak run app.zen_browser.zen
 
 ### Output configuration
