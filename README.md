@@ -33,7 +33,7 @@ Than we can move on install / fix some stuff
 2. Run this command 
     ``` 
     apt install sudo -y
-    usermod -aG sudo $USER 
+    usermod -aG sudo YOURUSERNAME
     ```
 3. Logout / Restart and test using ``` sudo apt update ```
 
