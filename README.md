@@ -3,12 +3,12 @@
 > This guide made for Thinkpad T14 gen 2 (intel) if they're running to some problem using linux + who want to try on tilling window manager
 
 SECTION:
-1. [Fix Thinkpad Wifi / Hardware Support](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#thinkpad-t14-gen-2-intel-setup)
-2. [Installing Debian 13 + Liquorix Kernel](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#debian-13-trixie--liquorix-setup)
-3. [Installing Sway with shipped DE Like Gnome](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#sway-setup)
-4. [Installing Barebone Debain with only Sway](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#go-all-in-barebone-debian--sway-no-others-de)
-5. [Bug Report](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#bug-are-might-still-found-with-my-own-testing)
-6. [Useful References](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#references)
+1. [Fix Thinkpad Wifi / Hardware Support](https://github.com/Tong-ST/debian_sway#thinkpad-t14-gen-2-intel-setup)
+2. [Installing Debian 13 + Liquorix Kernel](https://github.com/Tong-ST/debian_sway#debian-13-trixie--liquorix-setup)
+3. [Installing Sway with shipped DE Like Gnome](https://github.com/Tong-ST/debian_sway#sway-setup)
+4. [Installing Barebone Debain with only Sway](https://github.com/Tong-ST/debian_sway#go-all-in-barebone-debian--sway-no-others-de)
+5. [Bug Report](https://github.com/Tong-ST/debian_sway#bug-are-might-still-found-with-my-own-testing)
+6. [Useful References](https://github.com/Tong-ST/debian_sway#references)
 
 **Make sure to check every section before Skipping for example if you want to go with barebone debain + sway you still need to do debian setup + sway setup + barebone debian**
 
