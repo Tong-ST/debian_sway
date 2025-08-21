@@ -2,6 +2,15 @@
 
 > This guide made for Thinkpad T14 gen 2 (intel) if they're running to some problem using linux + who want to try on tilling window manager
 
+SECTION:
+1. [Fix Thinkpad Wifi / Hardware Support](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#thinkpad-t14-gen-2intel--debian-13-w-sway)
+2. [Installing Debian 13 + Liquorix Kernel](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#debian-13-trixie--liquorix-setup)
+3. [Installing Sway with shipped DE Like Gnome](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#sway-setup)
+4. [Installing Barebone Debain with only Sway](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#go-all-in-barebone-debian--sway-no-others-de)
+5. [Useful References](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#references)
+
+**Make sure to check every section before Skipping for example if you want to go with barebone debain + sway you still need to do debian setup + sway setup + barebone debian**
+
 ## Thinkpad T14 gen 2 (intel) Setup
 ***IF YOU DO NOT HAVE ANY HARDWARE SUPPORT PROBLEM YOU CAN *SKIP* THIS SECTION***
 > How to detect if your hardware not fully fuction?
@@ -178,7 +187,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 
 - UTILITES
     ```
-    sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc swayimg timeshift 
+    sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc swayimg timeshift
     ```
 - FONTS
     ```
@@ -188,6 +197,11 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 More optional **tlp** config it's depend on your machine but if you want to use my **personal config** you can ``` sudo cp -r debian_sway/custom_conf/tlp.conf /etc/ ``` but i **extremely recommend** to config for your own machine needed
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
+
+## Bug are might still found (with my own testing)
+- Graphical Glitches when install in VM it mostly on VM don't handle wayland very well you have to find you own solution for VM use for example. use different video render method
+- When exit get error: [common/ipc-client.c:86] unable to receive IPC response (But known to be harmless, If i find solution i will updated)
+- My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
 
 ## References
 Recommend to check Sway community doc below
