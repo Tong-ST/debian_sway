@@ -3,7 +3,7 @@
 > This guide made for Thinkpad T14 gen 2 (intel) if they're running to some problem using linux + who want to try on tilling window manager
 
 SECTION:
-1. [Fix Thinkpad Wifi / Hardware Support](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#thinkpad-t14-gen-2intel--debian-13-w-sway)
+1. [Fix Thinkpad Wifi / Hardware Support](https://github.com/Tong-ST/debian_sway/tree/main#thinkpad-t14-gen-2-intel-setup)
 2. [Installing Debian 13 + Liquorix Kernel](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#debian-13-trixie--liquorix-setup)
 3. [Installing Sway with shipped DE Like Gnome](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#sway-setup)
 4. [Installing Barebone Debain with only Sway](https://github.com/Tong-ST/debian_sway?tab=readme-ov-file#go-all-in-barebone-debian--sway-no-others-de)
