@@ -97,7 +97,7 @@ But if you not done yet, Let's do some customized!
     ``` 
     sudo apt install sway swaybg swaylock swayidle \
     waybar grim slurp wl-clipboard fuzzel alacritty mako-notifier \
-    brightnessctl pavucontrol blueman xdg-desktop-portal-wlr \
+    brightnessctl pavucontrol blueman xdg-desktop-portal-wlr mate-polkit \
     network-manager network-manager-gnome gnome-calendar \
     gnome-system-monitor thunar fonts-font-awesome
     ```
@@ -172,7 +172,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 - CORE PACKAGE
     ```
     sudo apt install wayland-protocols xwayland curl python3-pip pipx htop libinput-tools\
-    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber mate-polkit
+    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
@@ -203,6 +203,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - Graphical Glitches when install in VM it mostly on VM don't handle wayland very well you have to find you own solution for VM use for example. use different video render method
 - When exit get error: [common/ipc-client.c:86] unable to receive IPC response (But known to be harmless, If i find solution i will updated)
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
+- some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 
 ## References
 Recommend to check Sway community doc below
