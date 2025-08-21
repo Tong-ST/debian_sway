@@ -18,6 +18,10 @@ So, If you use Thinkpad T14 gen 2 like me that using *INTEL AX201 wifi card* (ma
         sudo modprobe -r iwlwifi
         sudo modprobe iwlwifi 
         ```
+        - If you run into wifi problem again:
+            1. Try redo those command
+            2. ON/OFF secure boot (But keep UEFI wifi connection always enable)
+            3. Switch between kernel
 2. Upgrade Linux kernel to newer version might find the guide how to somewhere it's different per distro but In debian I just upgrade with [ Liquorix](https://liquorix.net/) (Detail at Debian setup) This help me fix a lot of hardware problem
 
 3. Alternative, if thing still break and you can't find the way to fix it try install older version that you machine ship with for example [Thinkpad linux support](https://support.lenovo.com/us/en/solutions/pd031426-linux-for-personal-systems) not sure this way is really necessary these day since patch and support usaully ship with newer Linux kernel
@@ -60,10 +64,8 @@ If done setup the basic then move to next step
 Optional step if debian doesn't fully support language out of the box like me (Thai language) You've to install for yourself 
 
 For example of Thai language :
-1.  Install locales & fonts ``` sudo apt install task-thai-desktop fonts-thai-tlwg  ```
-2.  update locales if not auto detect. ``` sudo update-locale LANG=th_TH.UTF-8 ``` 
-3. reconfigure locales if needed. 
- ``` sudo dpkg-reconfigure locales ``` choose you locales and update it
+1. Install fonts ``` sudo apt install fonts-thai-tlwg  ```
+2. Eeconfigure locales ``` sudo dpkg-reconfigure locales ``` choose you locales and update it
 
 ## Sway Setup 
 > Nothing Fancy here just simple setup that you can expand...
@@ -160,17 +162,20 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 - CORE PACKAGE
     ```
     sudo apt install wayland-protocols xwayland curl python3-pip pipx htop libinput-tools\
-    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber seatd
+    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber mate-polkit
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
-- LOGIN MANAGER or autologin see in sway wiki in references section  
+- LOGIN MANAGER or autologin see in sway wiki in references section for 
     ```
     sudo apt install greetd wlgreet
     sudo systemctl enable greetd
     ```
     - ADDITIONAL CONFIG ``` sudo nano /etc/greetd/config.toml ```
     **uncomment line *below*** of if you using **wlgreet**
+    
+    - For Login without login manager you can just enter your username + password then enter ``` sway ``` to enter swaywm and it work everytime!
+
 - UTILITES
     ```
     sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc swayimg timeshift 
