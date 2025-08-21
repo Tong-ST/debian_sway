@@ -173,7 +173,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
     **uncomment line *below*** of if you using **wlgreet**
 - UTILITES
     ```
-    sudo apt install gvfs xdg-utils firefox-esr clipman gparted mpv swayimg timeshift 
+    sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc swayimg timeshift 
     ```
 - FONTS
     ```
