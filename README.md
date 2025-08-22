@@ -206,6 +206,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - When exit get red msg error: [common/ipc-client.c:86] unable to receive IPC response (Known to be harmless, If i find solution i will updated)
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
+- some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
 
 ## References
 Recommend to check Sway community doc below
