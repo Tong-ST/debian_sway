@@ -94,7 +94,7 @@ client.background       #000000
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    bindsym $mod+d exec wofi --show run
+    bindsym $mod+shift+d exec wofi --show run
 
     # Start a file manager
     bindsym $mod+t exec $file
