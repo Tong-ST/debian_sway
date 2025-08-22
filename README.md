@@ -7,8 +7,9 @@ SECTION:
 2. [Installing Debian 13 + Liquorix Kernel](https://github.com/Tong-ST/debian_sway#debian-13-trixie--liquorix-setup)
 3. [Installing Sway with shipped DE Like Gnome](https://github.com/Tong-ST/debian_sway#sway-setup)
 4. [Installing Barebone Debain with only Sway](https://github.com/Tong-ST/debian_sway#go-all-in-barebone-debian--sway-no-others-de)
-5. [Bug Report](https://github.com/Tong-ST/debian_sway#bug-are-might-still-found-with-my-own-testing)
-6. [Useful References](https://github.com/Tong-ST/debian_sway#references)
+5. [After install](https://github.com/Tong-ST/debian_sway#after-install)
+6. [Bug Report](https://github.com/Tong-ST/debian_sway#bug-are-might-still-found-with-my-own-testing)
+7. [Useful References](https://github.com/Tong-ST/debian_sway#references)
 
 **Make sure to check every section before Skipping for example if you want to go with barebone debain + sway you still need to do debian setup + sway setup + barebone debian**
 
@@ -156,11 +157,6 @@ But if you not done yet, Let's do some customized!
     - ``` WIN+Z ``` = Open your browser default with Zen
 
     And in default sway install and this config here we use **swaylock / swayidle** it will lockscreen when inactive It just going to be blackscreen when LOCK and you can UNLOCK by typing your login PIN then ENTER (Backspace to clear before typing)
-    
-    **Now you ready to drive in to Sway**
-    - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
-    - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
-    - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 
 ## GO ALL-IN? (Barebone debian + Sway No others DE)
 > This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering it to work, But here just provide some package you need to get start with
@@ -198,6 +194,12 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
     ```
 
 More optional **tlp** config it's depend on your machine but if you want to use my **personal config** you can ``` sudo cp -r debian_sway/custom_conf/tlp.conf /etc/ ``` but i **extremely recommend** to config for your own machine needed
+
+## AFTER INSTALL
+- First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
+- something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
+- Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
+- Want Darkmode? The easy way would be ``` sudo apt install gnome-tweak ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
 
