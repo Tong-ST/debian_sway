@@ -170,7 +170,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 - CORE PACKAGE
     ```
     sudo apt install wayland-protocols xwayland curl python3-pip pipx btop libinput-tools \
-    xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber
+    libpam-systemd xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber 
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
@@ -199,7 +199,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
 - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
 - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
-- Want Darkmode? The easy way would be ``` sudo apt install gnome-tweak ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
+- Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
 
