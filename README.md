@@ -56,12 +56,12 @@ Than we can move on install / fix some stuff
 If done setup the basic then move to next step
 - In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealling with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
     - Install Liquorix on Debian
-        1. install " curl " if not already and add repo
+        1. install " curl " if not already and Installing
             ```
             sudo apt install curl -y
             curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
             ```
-        2. install " Liquorix "
+        2. Verify " Liquorix " install completed
 
             ``` 
             sudo apt update
@@ -136,7 +136,7 @@ But if you not done yet, Let's do some customized!
     ```
     cp -r debian_sway/configs/ ~/.config/
     ```
-    Install JetBrains Mono Nerd Font for Fonts and Icons used
+    Install JetBrains Mono Nerd Font for Fonts used
     ```
     wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
     cd ~/.local/share/fonts
@@ -165,13 +165,15 @@ But if you not done yet, Let's do some customized!
 ## GO ALL-IN? (Barebone debian + Sway No others DE)
 > This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering it to work, But here just provide some package you need to get start with
 
+In *** Debian installation *** at Desktop Environment section ONLY check **Standard system Utilities**
+
 This section can do after install or alongside with Sway install section abrove mostly just package that might doesn't come with shipped DE
 
 If you very new, First thing might need install is just ``` apt install sudo -y ``` do within root that can access by ``` su - ``` which is already explain in debian installation abrove
 
 - CORE PACKAGE
     ```
-    sudo apt install wayland-protocols xwayland curl python3-pip pipx htop libinput-tools\
+    sudo apt install wayland-protocols xwayland curl python3-pip pipx btop libinput-tools \
     xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
@@ -201,7 +203,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 
 ## Bug are might still found (with my own testing)
 - Graphical Glitches when install in VM it mostly on VM don't handle wayland very well you have to find you own solution for VM use for example. use different video render method
-- When exit get error: [common/ipc-client.c:86] unable to receive IPC response (But known to be harmless, If i find solution i will updated)
+- When exit get red msg error: [common/ipc-client.c:86] unable to receive IPC response (Known to be harmless, If i find solution i will updated)
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 
