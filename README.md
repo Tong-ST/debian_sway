@@ -96,7 +96,7 @@ But if you not done yet, Let's do some customized!
     Install basic need
     ``` 
     sudo apt install sway swaybg swaylock swayidle \
-    waybar grim slurp wl-clipboard fuzzel alacritty mako-notifier \
+    waybar wlogout grim slurp wl-clipboard fuzzel wofi alacritty mako-notifier \
     brightnessctl pavucontrol blueman xdg-desktop-portal-wlr mate-polkit \
     network-manager network-manager-gnome gnome-calendar \
     gnome-system-monitor thunar fonts-font-awesome
@@ -159,7 +159,7 @@ But if you not done yet, Let's do some customized!
     
     **Now you ready to drive in to Sway**
     - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
-    - something you might want to do is switch between language currently using ``` CTRL+ALT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
+    - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
     - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 
 ## GO ALL-IN? (Barebone debian + Sway No others DE)

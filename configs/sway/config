@@ -93,8 +93,8 @@ client.background       #000000
     bindsym $mod+Shift+w kill
 
     # Start your launcher
-    # bindsym $mod+d exec wofi --show drun
     bindsym $mod+d exec $menu
+    bindsym $mod+d exec wofi --show run
 
     # Start a file manager
     bindsym $mod+t exec $file
@@ -242,10 +242,10 @@ bindsym $mod+alt+r mode "resize"
     bindsym Print exec grim
     bindsym $mod+Print exec grim -g "$(slurp)"
    
-    # Switch language layout in example here using left-control + left-alt for switch layout between US & TH
+    # Switch language layout in example here using left-alt + left-shift for switch layout between US & TH
     input "type:keyboard" {
     xkb_layout us,th
-    xkb_options grp:ctrl_alt_toggle
+    xkb_options grp:alt_shift_toggle
 }
 
 

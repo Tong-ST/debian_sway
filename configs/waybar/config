@@ -43,7 +43,7 @@
   "custom/logout": {
     "format": "",
     "tooltip": "Logout",
-    "on-click": "swaymsg exit"
+    "on-click": "wlogout"
   },
   "custom/shutdown": {
     "format": "",
@@ -54,6 +54,6 @@
     "format": "",
     "tooltip": "menu",
     "on-click": "fuzzel"
-  },
+  }
 }
 
