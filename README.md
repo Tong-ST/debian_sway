@@ -209,6 +209,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 - some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
+- waybar not appear, app run not run/slow it might be happend you run nested DE like run sway on top Gnome, to Fix that just restart and go to 'sway' session instant not to panic if this the case, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
 
 ## References
 Recommend to check Sway community doc below
