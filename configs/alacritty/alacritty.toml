@@ -1,0 +1,59 @@
+# Window settings
+[window]
+padding = { x = 5, y = 5 } # Padding around the terminal content
+opacity = 0.97 # Window opacity (0.0 - 1.0)
+decorations = "full" # Window decorations (full, transparent, none)
+
+# Font settings 
+# >>> Uncomment section below to change font you have
+[font]
+size = 16.0
+[font.normal]
+#family = "JetBrainsMono Nerd Font"
+#style = "Regular"
+[font.bold]
+#family = "JetBrainsMono Nerd Font"
+#style = "Bold"
+[font.italic]
+#family = "JetBrainsMono Nerd Font"
+#style = "Italic"
+[font.bold_italic]
+#family = "JetBrainsMono Nerd Font"
+#style = "Bold Italic"
+
+# Color scheme
+[colors]
+draw_bold_text_with_bright_colors = true
+[colors.primary]
+background = "0x282c34" # Dracula background
+foreground = "0xabb2bf" # Dracula foreground
+[colors.normal]
+black = "0x282c34"
+red = "0xe06c75"
+green = "0x98c379"
+yellow = "0xe5c07b"
+blue = "0x61afef"
+magenta = "0xc678dd"
+cyan = "0x56b6c2"
+white = "0xabb2bf"
+[colors.bright]
+black = "0x5c6370"
+red = "0xe06c75"
+green = "0x98c379"
+yellow = "0xe5c07b"
+blue = "0x61afef"
+magenta = "0xc678dd"
+cyan = "0x56b6c2"
+white = "0xc8ccd4"
+
+# Scrolling settings
+[scrolling]
+history = 10000 # Maximum number of lines in scrollback buffer
+multiplier = 3 # Number of lines scrolled per increment
+
+# Key bindings
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }, # Spawn new instance
+  { key = "Space", mods = "Control|Shift", action = "ToggleViMode" }, # Toggle Vi mode
+]

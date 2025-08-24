@@ -19,7 +19,7 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu fuzzel
+set $menu wofi --show drun
 
 # Your others shortcut for app
 set $file nautilus

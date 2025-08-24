@@ -97,10 +97,10 @@ But if you not done yet, Let's do some customized!
     Install basic need
     ``` 
     sudo apt install sway swaybg swaylock swayidle \
-    waybar wlogout grim slurp wl-clipboard fuzzel wofi alacritty mako-notifier \
+    waybar wlogout libwayland-dev grim slurp wl-clipboard wofi alacritty mako-notifier \
     brightnessctl pavucontrol blueman xdg-desktop-portal-wlr mate-polkit \
     network-manager network-manager-gnome gnome-calendar \
-    gnome-system-monitor nautilus fonts-font-awesome
+    htop nautilus fonts-font-awesome
     ```
 
     Also install " tlp " for Thinkpad/laptop power management
@@ -152,7 +152,7 @@ But if you not done yet, Let's do some customized!
     - ``` WIN+SHIFT+E ``` = Logout from Sway so you can go back to others DE in-case something went wrong
     - ``` WIN+SHIFT+W ``` = Close window/application
     - ``` WIN+SHIFT+C ``` = Reload sway config file to see chagnes (Error might show, better fix what's wrong before move on)
-    - ``` WIN+D ``` = Search for app using fuzzel
+    - ``` WIN+D ``` = Search for app using wofi
     - ``` WIN+ENTER ``` = Open alacritty terminal
     - ``` WIN+Z ``` = Open your browser default with Zen
 
@@ -169,8 +169,8 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
 
 - CORE PACKAGE
     ```
-    sudo apt install wayland-protocols xwayland curl python3-pip pipx btop libinput-tools \
-    libpam-systemd xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber 
+    sudo apt install wayland-protocols xwayland curl python3-pip pipx libinput-tools \
+    libpam-systemd xserver-xorg-core mesa-utils pipewire pipewire-audio wireplumber
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
@@ -200,7 +200,8 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
 - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 - Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / Nice balance way to make darkmode maybe try change the whole shell Ex. [Like this shell](https://github.com/vinceliuice/Graphite-gtk-theme) This way you might need 'gnome-tweaks' instead of 'lxappearance' / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
-- For Eye-care/Gamma control control try: wlsunset, see how to use ``` wlsunset -h ``` adjust to your liking/location then add ``` exec wlsunset -l xx -L xx ``` to your sway .config file 
+- For Eye-care/Gamma control control try: wlsunset, see how to use ``` wlsunset -h ``` adjust to your liking/location then add ``` exec wlsunset -l xx.xx -L xx.xx ``` (YOUR lat/long) to your sway .config file
+
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
 
 ## Bug are might still found (with my own testing)
