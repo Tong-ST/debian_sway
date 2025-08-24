@@ -199,7 +199,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
 - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
 - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
-- Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
+- Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / Nice balance way to make darkmode maybe try change the whole shell Ex. [Like this shell](https://github.com/vinceliuice/Graphite-gtk-theme) / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
 
@@ -209,7 +209,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 - some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
-- waybar not appear, app run not run/slow it might be happend you run nested DE like run sway on top Gnome, to Fix that just restart and go to 'sway' session instant not to panic if this the case, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
+- waybar not appear, app run not run/slow, It might happend because you run nested DE (sway on top Gnome), to Fix that just restart and go to 'sway' session instantly, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
 
 ## References
 Recommend to check Sway community doc below
