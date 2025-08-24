@@ -135,7 +135,10 @@ But if you not done yet, Let's do some customized!
     ```
     Copy .config file to your device or Manually copy files in configs folder to ~/.config/
     ```
-    cp -r debian_sway/configs/ ~/.config/
+    cp -r debian_sway/configs/sway/ ~/.config/
+    cp -r debian_sway/configs/waybar/ ~/.config/
+    cp -r debian_sway/configs/wofi/ ~/.config/
+    cp -r debian_sway/configs/alacritty ~/.config/
     ```
     Install JetBrains Mono Nerd Font for Fonts used
     ```
