@@ -4,17 +4,19 @@
   color: #ffffff;
 }
 
-window#waybar {
+window #waybar {
   background: #1e1e2e;
   border-bottom: 2px solid #444;
 }
 
 #pulseaudio, #bluetooth, #clock, #cpu, #memory, #battery, #network {
-  padding: 0 10px;
+  padding: 2px 10px;
 }
 
 #custom-menu, #custom-shutdown, #custom-logout{
-  padding: 0 10px;
+  padding: 2px 2px;
+  padding-right: 16px;
+  padding-left: 14px;
   color: #e06c75;
 }
 
