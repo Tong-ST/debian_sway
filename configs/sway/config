@@ -22,7 +22,7 @@ set $term alacritty
 set $menu fuzzel
 
 # Your others shortcut for app
-set $file Thunar
+set $file nautilus
 set $browser flatpak run app.zen_browser.zen
 
 include /etc/sway/config-vars.d/*

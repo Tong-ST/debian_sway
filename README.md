@@ -100,7 +100,7 @@ But if you not done yet, Let's do some customized!
     waybar wlogout grim slurp wl-clipboard fuzzel wofi alacritty mako-notifier \
     brightnessctl pavucontrol blueman xdg-desktop-portal-wlr mate-polkit \
     network-manager network-manager-gnome gnome-calendar \
-    gnome-system-monitor thunar fonts-font-awesome
+    gnome-system-monitor nautilus fonts-font-awesome
     ```
 
     Also install " tlp " for Thinkpad/laptop power management
