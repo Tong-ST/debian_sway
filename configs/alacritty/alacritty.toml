@@ -5,19 +5,19 @@ opacity = 0.97 # Window opacity (0.0 - 1.0)
 decorations = "full" # Window decorations (full, transparent, none)
 
 # Font settings 
-# >>> Uncomment section below to change font you have
+# >>> Uncomment ALL LINE below to change font you have
 [font]
 size = 16.0
-[font.normal]
+#[font.normal]
 #family = "JetBrainsMono Nerd Font"
 #style = "Regular"
-[font.bold]
+#[font.bold]
 #family = "JetBrainsMono Nerd Font"
 #style = "Bold"
-[font.italic]
+#[font.italic]
 #family = "JetBrainsMono Nerd Font"
 #style = "Italic"
-[font.bold_italic]
+#[font.bold_italic]
 #family = "JetBrainsMono Nerd Font"
 #style = "Bold Italic"
 

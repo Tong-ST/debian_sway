@@ -4,8 +4,8 @@
   color: #ffffff;
 }
 
-window #waybar {
-  background: #1e1e2e;
+window#waybar {
+  background: rgba(40, 44, 52, 0.9);
   border-bottom: 2px solid #444;
 }
 
@@ -26,8 +26,8 @@ window #waybar {
 }
 
 #workspaces button {
-    padding: 4px 8px;
-    margin: 0 2px;
+    padding: 4px 4px;
+    margin: 0px 2px;
     border-radius: 6px;
     background: transparent;
     color: #ffffff;

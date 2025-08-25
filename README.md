@@ -85,7 +85,7 @@ Now for the fun part, If you not plan to using *Tiling window manager* you alrea
 
 But if you not done yet, Let's do some customized! 
 
-![Desktop Enviroment Image](sway_fuzzel.png)
+![Desktop Enviroment Image](debian_wofi.png)
 ![Desktop Enviroment Image](debian_sway.png)
 
 **RECOMMENDED do step-by-step BELOW in others desktop enviroment like GNOME before switch to sway in later step**
@@ -200,6 +200,16 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 
 ## AFTER INSTALL
 - First thing to do is check in .config file and read it and change for your liking ``` sudo nano ~/.config/sway/config ```
+- You might also want to check others config
+    ```
+    cd ~/.config/waybar/    
+    ```
+    ```
+    cd ~/.config/wofi/
+    ```
+    ```
+    cd ~/.config/alacritty/
+    ```
 - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
 - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
 - Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / Nice balance way to make darkmode maybe try change the whole shell Ex. [Like this shell](https://github.com/vinceliuice/Graphite-gtk-theme) This way you might need 'gnome-tweaks' instead of 'lxappearance' / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
@@ -221,3 +231,8 @@ Recommend to check Sway community doc below
 - [Sway wiki](https://github.com/swaywm/sway/wiki)
 - [Useful Add-on for Sway](https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway)
 - [Debian - Sway wiki](https://wiki.debian.org/sway)
+
+## More references
+- [Catppuccin theme for alacritty term](https://github.com/catppuccin/alacritty) (Have to edit alacritty.toml, Put import on top and comment current color theming)
+- [Monochrome Icon set](https://www.gnome-look.org/p/2151189)
+- [Installing ZSH/Oh my zsh on debian guide](https://getcyber.me/posts/installing-and-using-zsh-instead-of-bash-on-debian-based-systems/)

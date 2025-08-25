@@ -1,5 +1,5 @@
 * {
-	border-radius:2px;
+	border-radius:4px;
 	border: none;
 }
 
@@ -16,13 +16,16 @@ window {
 
 #entry:selected {
 	background-color: #bbccdd;
-	color: #333333;
+	color: white;
 	border-radius:0px;
+}
+
+#expander-box {
+	background-color: rgba(40, 44, 52, 0.9);
 }
 
 #text:selected {
 	color: #333333;
-	
 }
 
 #input{
