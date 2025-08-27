@@ -76,7 +76,7 @@ Optional step if debian doesn't fully support language out of the box like me (T
 
 For example of Thai language :
 1. Install fonts ``` sudo apt install fonts-thai-tlwg  ```
-2. Eeconfigure locales ``` sudo dpkg-reconfigure locales ``` choose you locales and update it
+2. Reconfigure locales ``` sudo dpkg-reconfigure locales ``` choose you locales and update it
 
 ## Sway Setup 
 > Nothing Fancy here just simple setup that you can expand...
@@ -120,7 +120,7 @@ But if you not done yet, Let's do some customized!
     flatpak install flathub app.zen_browser.zen
     flatpak install flathub com.github.d4nj1.tlpui
     ```
-    For **Nvidia** users you might need to check **nouveau** work properly 
+    For **Nvidia** users you might need to check **nouveau** work properly / or If you want to use Nividia Proprietary Driver you have to do extra work and might still get bug, (using nouveau expect low performance in gamming than nvidia driver)   
     ```
     sudo dmesg | grep nouveau
     ```
@@ -133,7 +133,7 @@ But if you not done yet, Let's do some customized!
     sudo apt install git
     git clone https://github.com/Tong-ST/debian_sway.git
     ```
-    Copy .config file to your device or Manually copy files in configs folder to ~/.config/
+    Copy .config file that you like or Manually copy files in configs folder to ~/.config/
     ```
     cp -r debian_sway/configs/sway/ ~/.config/
     cp -r debian_sway/configs/waybar/ ~/.config/
@@ -220,7 +220,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 ## Bug are might still found (with my own testing)
 - Graphical Glitches when install in VM it mostly on VM don't handle wayland very well you have to find you own solution for VM use for example. use different video render method
 - When exit get red msg error: [common/ipc-client.c:86] unable to receive IPC response (Known to be harmless, If i find solution i will updated)
-- My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section, If found better solution will put it there
+- My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section or do proper shutdown & boot up again helped me, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 - some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
 - waybar not appear, app run not run/slow, It might happend because you run nested DE (sway on top Gnome), to Fix that just restart and go to 'sway' session instantly, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
