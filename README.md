@@ -15,7 +15,7 @@ SECTION:
 
 ## Thinkpad T14 gen 2 (intel) Setup
 ***IF YOU DO NOT HAVE ANY HARDWARE SUPPORT PROBLEM YOU CAN *SKIP* THIS SECTION***
-> How to detect if your hardware not fully fuction?
+> How to detect if your hardware not fully function?
 - One way to see is when you boot up into distro the green [OK]... is not all checked
 #
 So, If you use Thinkpad T14 gen 2 like me that using *INTEL AX201 wifi card* (maybe others model as well) and have problem with <b> Wifi not working correctly </b> or others hardware that not support out of the box here's you might need to check
@@ -35,7 +35,7 @@ So, If you use Thinkpad T14 gen 2 like me that using *INTEL AX201 wifi card* (ma
             3. Switch between kernel
 2. Upgrade Linux kernel to newer version might find the guide how to somewhere it's different per distro but In debian I just upgrade with [ Liquorix](https://liquorix.net/) (Detail at Debian setup) This help me fix a lot of hardware problem
 
-3. Alternative, if thing still break and you can't find the way to fix it try install older version that you machine ship with for example [Thinkpad linux support](https://support.lenovo.com/us/en/solutions/pd031426-linux-for-personal-systems) not sure this way is really necessary these day since patch and support usaully ship with newer Linux kernel
+3. Alternative, if thing still break and you can't find the way to fix it try install older version that you machine ship with for example [Thinkpad linux support](https://support.lenovo.com/us/en/solutions/pd031426-linux-for-personal-systems) not sure this way is really necessary these day since patch and support usually ship with newer Linux kernel
 
 > Hope those help for some folk that have same problem as me...if everything work correctly, Now let's move to next step about Distro setup
 
@@ -55,7 +55,7 @@ Than we can move on install / fix some stuff
 ***AGAIN, IF YOU DON'T HAVE ANY HARDWARE SUPPORT PROBLEM STICK WITH DEFAULT KERNEL THAT SHIP WITH DEBIAN AND YOU CAN SKIP THIS SECION BELOW***
 
 If done setup the basic then move to next step
-- In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealling with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
+- In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealing with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
     - Install Liquorix on Debian
         1. install " curl " if not already and Installing
             ```
@@ -85,10 +85,10 @@ Now for the fun part, If you not plan to using *Tiling window manager* you alrea
 
 But if you not done yet, Let's do some customized! 
 
-![Desktop Enviroment Image](debian_wofi.png)
-![Desktop Enviroment Image](debian_sway.png)
+![Desktop Environment Image](debian_wofi.png)
+![Desktop Environment Image](debian_sway.png)
 
-**RECOMMENDED do step-by-step BELOW in others desktop enviroment like GNOME before switch to sway in later step**
+**RECOMMENDED do step-by-step BELOW in others desktop environment like GNOME before switch to sway in later step**
 
 1. ***FIRST STEP* Install Sway and Dependencies**
 
@@ -120,7 +120,7 @@ But if you not done yet, Let's do some customized!
     flatpak install flathub app.zen_browser.zen
     flatpak install flathub com.github.d4nj1.tlpui
     ```
-    For **Nvidia** users you might need to check **nouveau** work properly / or If you want to use Nividia Proprietary Driver you have to do extra work and might still get bug, (using nouveau expect low performance in gamming than nvidia driver)   
+    For **Nvidia** users you might need to check **nouveau** work properly / or If you want to use Nvidia Proprietary Driver you have to do extra work and might still get bug, (using nouveau expect low performance in gaming than nvidia driver)   
     ```
     sudo dmesg | grep nouveau
     ```
@@ -154,7 +154,7 @@ But if you not done yet, Let's do some customized!
     
     - ``` WIN+SHIFT+E ``` = Logout from Sway so you can go back to others DE in-case something went wrong
     - ``` WIN+SHIFT+W ``` = Close window/application
-    - ``` WIN+SHIFT+C ``` = Reload sway config file to see chagnes (Error might show, better fix what's wrong before move on)
+    - ``` WIN+SHIFT+C ``` = Reload sway config file to see changes (Error might show, better fix what's wrong before move on)
     - ``` WIN+D ``` = Search for app using wofi
     - ``` WIN+ENTER ``` = Open alacritty terminal
     - ``` WIN+Z ``` = Open your browser default with Zen
@@ -162,13 +162,13 @@ But if you not done yet, Let's do some customized!
     And in default sway install and this config here we use **swaylock / swayidle** it will lockscreen when inactive It just going to be blackscreen when LOCK and you can UNLOCK by typing your login PIN then ENTER (Backspace to clear before typing)
 
 ## GO ALL-IN? (Barebone debian + Sway No others DE)
-> This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to thinkering it to work, But here just provide some package you need to get start with
+> This section is for more advance user, If you want to go with just sway and no others DE, mean less bloated but easy to break!!! Also this section is more like experimental, You might have to tinkering it to work, But here just provide some package you need to get start with
 
 In *** Debian installation *** at Desktop Environment section ONLY check **Standard system Utilities**
 
-This section can do after install or alongside with Sway install section abrove mostly just package that might doesn't come with shipped DE
+This section can do after install or alongside with Sway install section above mostly just package that might doesn't come with shipped DE
 
-If you very new, First thing might need install is just ``` apt install sudo -y ``` do within root that can access by ``` su - ``` which is already explain in debian installation abrove
+If you very new, First thing might need install is just ``` apt install sudo -y ``` do within root that can access by ``` su - ``` which is already explain in debian installation above
 
 - CORE PACKAGE
     ```
@@ -177,7 +177,7 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
     ```
     If your GPU support vulkan also install ``` sudo apt install mesa-vulkan-drivers ```
 
-- LOGIN MANAGER or autologin see in sway wiki in references section for 
+- LOGIN MANAGER or auto login see in sway wiki in references section for 
     ```
     sudo apt install greetd wlgreet
     sudo systemctl enable greetd
@@ -185,9 +185,9 @@ If you very new, First thing might need install is just ``` apt install sudo -y 
     - ADDITIONAL CONFIG ``` sudo nano /etc/greetd/config.toml ```
     **uncomment line *below*** of if you using **wlgreet**
     
-    - For Login without login manager you can just enter your username + password then enter ``` sway ``` to enter swaywm and it work everytime!
+    - For Login without login manager you can just enter your username + password then enter ``` sway ``` to enter swaywm and it work every time!
 
-- UTILITES
+- UTILITIES
     ```
     sudo apt install gvfs xdg-utils firefox-esr clipman gparted vlc swayimg timeshift
     ```
@@ -212,7 +212,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
     ```
 - something you might want to do is switch between language currently using ``` ALT+SHIFT ``` and it switch between US & TH *read near end of rows in config file* you will see where to change
 - Change wallpapers in .config file you'll see in very first page just change path to your background keep ' fill ' at the end
-- Want Darkmode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / Nice balance way to make darkmode maybe try change the whole shell Ex. [Like this shell](https://github.com/vinceliuice/Graphite-gtk-theme) This way you might need 'gnome-tweaks' instead of 'lxappearance' / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
+- Want Dark mode? The easy way would be ``` sudo apt install lxappearance ``` get some theme from gnome-look.org install on like ``` /usr/share/themes ``` / Nice balance way to make dark mode maybe try change the whole shell Ex. [Like this shell](https://github.com/vinceliuice/Graphite-gtk-theme) This way you might need 'gnome-tweaks' instead of 'lxappearance' / The more involved way is tackle with [darkman](https://gitlab.com/WhyNotHugo/darkman) which can change dark/light mode dynamically
 - For Eye-care/Gamma control control try: wlsunset, see how to use ``` wlsunset -h ``` adjust to your liking/location then add ``` exec wlsunset -l xx.xx -L xx.xx ``` (YOUR lat/long) to your sway .config file
 
 > ***AND ABOUT IT!***, It cover most basic setup, now you can install stuff & customize to you liking, Thanks if you stick to the end of this long long guide...
@@ -227,7 +227,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 
 ## More Version
 ### The Forest
-Use `configs_forest` instead if `configs`
+Use config files in `configs_forest` folder instead of `configs` folder
 
 For Firefox Theme see [Textfox theme](https://github.com/adriankarlen/textfox) for installation process, Feel free to use my firefox config
 Note: Green firefox theme like mine I use theme name `Dark L20 Green` after doing Textfox theme installation / You might also need extension `sidebery` for vertical bar 
