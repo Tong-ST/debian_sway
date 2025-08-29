@@ -225,6 +225,17 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
 - waybar not appear, app run not run/slow, It might happend because you run nested DE (sway on top Gnome), to Fix that just restart and go to 'sway' session instantly, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
 
+## More Version
+### The Forest
+Use `configs_forest` instead if `configs`
+
+For Firefox Theme see [Textfox theme](https://github.com/adriankarlen/textfox) for installation process, Feel free to use my firefox config
+Note: Green firefox theme like mine I use theme name `Dark L20 Green` after doing Textfox theme installation / You might also need extension `sidebery` for vertical bar 
+
+![forest_pallet](assets/forest_color_pallet.png)
+![forest_theme](assets/forst_deb.png)
+![forest_firefox](assets/forest_firefox.png)
+
 ## References
 Recommend to check Sway community doc below
 

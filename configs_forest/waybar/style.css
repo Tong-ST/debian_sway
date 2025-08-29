@@ -1,0 +1,50 @@
+* {
+  font-family: "JetBriain mono Nerd Font", monospace;
+  font-size: 16px;
+  color: #D8E4FF;
+}
+
+window#waybar {
+  background: rgba(30, 35, 26,0.85);
+
+  border-bottom: 0px solid #444;
+}
+
+#pulseaudio, #bluetooth, #clock, #cpu, #memory, #battery, #network {
+  padding: 2px 10px;
+}
+
+#custom-menu, #custom-shutdown, #custom-logout{
+  padding: 2px 2px;
+  padding-right: 16px;
+  padding-left: 14px;
+  color: #5F957A;
+}
+
+#custom-menu:hover, #custom-shutdown:hover, #custom-logout:hover {
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+#workspaces button {
+    padding: 4px 4px;
+    margin: 0px 2px;
+    border-radius: 6px;
+    background: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.focused {
+    background: #5e81ac;  /* highlight color for active workspace */
+    color: #ffffff;
+   /* border: 1px solid #88c0d0;*/
+}
+
+#workspaces button.visible {
+    background: #434c5e; /* workspaces visible on another monitor */
+}
+
+#workspaces button.urgent {
+    background: #bf616a; /* urgent apps highlight */
+    color: #ffffff;
+}
