@@ -120,7 +120,7 @@ But if you not done yet, Let's do some customized!
     flatpak install flathub app.zen_browser.zen
     flatpak install flathub com.github.d4nj1.tlpui
     ```
-    For **Nvidia** users you might need to check **nouveau** work properly / or If you want to use Nividia Proprietary Driver you have to do extra work and might still get bug, (using nouveau expect low performance in gamming than nvidia driver) 
+    For **Nvidia** users you might need to check **nouveau** work properly / or If you want to use Nividia Proprietary Driver you have to do extra work and might still get bug, (using nouveau expect low performance in gamming than nvidia driver)   
     ```
     sudo dmesg | grep nouveau
     ```
