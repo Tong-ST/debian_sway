@@ -71,6 +71,8 @@ input "2:14:SynPS/2_Synaptics_TouchPad" {
 # window gaps
 gaps inner 10
 
+default_border pixel 2
+
 # Window borders
 # Colors:               border   background  text      indicator  child_border
 client.focused          #96BE8C  #3A5638     #D8E4FF   #96BE8C    #96BE8C
