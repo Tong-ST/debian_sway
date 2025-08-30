@@ -52,7 +52,7 @@ Than we can move on install / fix some stuff
     ```
 3. Logout / Restart and test using ``` sudo apt update ```
 
-***AGAIN, IF YOU DON'T HAVE ANY HARDWARE SUPPORT PROBLEM STICK WITH DEFAULT KERNEL THAT SHIP WITH DEBIAN AND YOU CAN SKIP THIS SECION BELOW***
+***AGAIN, IF YOU DON'T HAVE ANY HARDWARE SUPPORT PROBLEM STICK WITH DEFAULT KERNEL THAT SHIP WITH DEBIAN AND YOU CAN SKIP THIS SECTION BELOW***
 
 If done setup the basic then move to next step
 - In this setup I will be install Liquorix as linux Kernel that give debian to newer kernel version this help me fixes a lot issue dealing with hardware support for Thinkpad T14 gen 2(and might work on some closer model)
@@ -223,7 +223,7 @@ More optional **tlp** config it's depend on your machine but if you want to use 
 - My Thinkpad T14 gen 2(i) sometime still got wifi not found, I just redo stuff detail on first section or do proper shutdown & boot up again helped me, If found better solution will put it there
 - some app that required sudo permission like gparted still not fully work you can use ``` sudo -E gparted ``` for now (*work in progress* to fix polkit problem, currently use mate-polkit but found not working for all app)
 - some flatpak app like steam doesn't run update properly? try running in terminal ``` flatpak run com.valvesoftware.Steam ``` you will see the message
-- waybar not appear, app run not run/slow, It might happend because you run nested DE (sway on top Gnome), to Fix that just restart and go to 'sway' session instantly, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
+- waybar not appear, app run not run/slow, It might happened because you run nested DE (sway on top Gnome), to Fix that just restart and go to 'sway' session instantly, You can also check by on login menu CTRL+AlT+F3 then login to session by ``` dbus-run-session sway ``` Here's really run on it own...
 
 ## More Version
 ### The Forest
@@ -233,8 +233,8 @@ For Firefox Theme see [Textfox theme](https://github.com/adriankarlen/textfox) f
 Note: Green firefox theme like mine I use theme name `Dark L20 Green` after doing Textfox theme installation / You might also need extension `sidebery` for vertical bar 
 
 ![forest_pallet](assets/forest_color_pallet.png)
-![forest_theme](assets/forst_deb.png)
-![forest_firefox](assets/forest_firefox.png)
+![forest_theme](assets/deb_sway_forest_theme.png)
+![forest_firefox](assets/textfox_theme.png)
 
 ## References
 Recommend to check Sway community doc below

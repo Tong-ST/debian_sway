@@ -6,7 +6,7 @@
   "modules-right": ["pulseaudio", "bluetooth" ,"cpu", "memory", "battery", "network"],
 
   "clock": {
-    "format": "{:%a %d %b %H:%M}",
+    "format": " {:%a %d %b %H:%M}",
     "on-click": "gnome-calendar"
   },
   "cpu": {

@@ -1,12 +1,18 @@
 {
   "layer": "top",
   "position": "top",
+  "mode": "dock",
+  "height": 36,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-top": 6,
+  "gtk-layer-shell": true,
   "modules-left": ["custom/menu", "custom/shutdown" ,"custom/logout", "sway/workspaces"], 
   "modules-center": ["clock"],
   "modules-right": ["pulseaudio", "bluetooth" ,"cpu", "memory", "battery", "network"],
 
   "clock": {
-    "format": "{:%a %d %b %H:%M}",
+    "format": " {:%a %d %b %H:%M}",
     "on-click": "gnome-calendar"
   },
   "cpu": {
